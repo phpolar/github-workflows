@@ -1,6 +1,5 @@
 on:
   workflow_call:
-    secrets: inherit
 jobs:
   build_php_old_stable:
     runs-on: ${{ matrix.operating-system }}
