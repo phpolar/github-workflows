@@ -1,7 +1,6 @@
 name: Auto Merge PHPStan
 on:
   workflow_call:
-    secrets: inherit 
 jobs:
   dependabot_auto_merge_code_sniffer:
     uses: phpolar/github-workflows/.github/workflows/common-composer-dep-auto-merge.yml

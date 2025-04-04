@@ -17,7 +17,6 @@ name: PHPMD
 
 on:
   workflow_call:
-    secrets: inherit    
 permissions:
   contents: read
 jobs:

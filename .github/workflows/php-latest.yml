@@ -1,6 +1,5 @@
 on:
   workflow_call:
-    secrets: inherit
 jobs:
   build_latest_and_nightly:
     runs-on: ${{ matrix.operating-system }}

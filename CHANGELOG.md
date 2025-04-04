@@ -1,3 +1,9 @@
+## 1.0.2 (2025-04-03)
+
+### Fix
+
+- **php-old-stable**: remove secrets mapping
+
 ## 1.0.1 (2025-04-03)
 
 ### Fix

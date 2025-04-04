@@ -7,7 +7,6 @@ on:
       composer-run:
         required: true
         type: string
-    secrets: inherit
 
 permissions:
   contents: write

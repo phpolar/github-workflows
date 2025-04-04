@@ -1,6 +1,5 @@
 on:
   workflow_call:
-    secrets: inherit 
 jobs:
   pr_quality:
     runs-on: ubuntu-latest
