@@ -1,0 +1,12 @@
+name: Auto merge Code Sniffer
+on:
+  pull_request:
+    branches: [ main ]
+    paths:
+      - composer.lock
+jobs:
+  dependabot_auto_merge_code_sniffer:
+    uses: phpolar/github-workflows/.github/workflows/common-composer-dep-auto-merge.yml
+    with:
+      dependency-name: squizlabs/php_codesniffer
+      composer-run: "ci:lint"
