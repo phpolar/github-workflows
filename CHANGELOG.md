@@ -1,3 +1,9 @@
+## 1.0.6 (2025-04-03)
+
+### Fix
+
+- **pr-quality**: ignore upload failure
+
 ## 1.0.5 (2025-04-03)
 
 ### Fix
