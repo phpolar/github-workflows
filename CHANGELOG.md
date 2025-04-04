@@ -1,3 +1,15 @@
+## 1.0.5 (2025-04-03)
+
+### Fix
+
+- **phpmd**: continue on upload error
+
+## 1.0.4 (2025-04-03)
+
+### Fix
+
+- **phpmd**: add token
+
 ## 1.0.3 (2025-04-03)
 
 ### Fix
