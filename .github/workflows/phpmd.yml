@@ -42,3 +42,4 @@ jobs:
         with:
           sarif_file: phpmd-results.sarif
           wait-for-processing: true
+          token: ${{ secrets.GITHUB_TOKEN }}
