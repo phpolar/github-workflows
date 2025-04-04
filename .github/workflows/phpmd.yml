@@ -16,19 +16,10 @@
 name: PHPMD
 
 on:
-  pull_request:
-    # The branches below must be a subset of the branches above
-    branches: [ "main" ]
-    paths:
-      - '**.php'
-      - '!tests/**'
-      - '!examples/**'
-      - '!config/**'
-      - '!.phan/**'
-
+  workflow_call:
+    secrets: inherit    
 permissions:
   contents: read
-
 jobs:
   PHPMD:
     name: Run PHPMD scanning
@@ -36,21 +27,17 @@ jobs:
     permissions:
       contents: read # for checkout to fetch code
       security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           coverage: none
           tools: phpmd
-
       - name: Run PHPMD
         run: phpmd ./src sarif codesize --reportfile phpmd-results.sarif
         continue-on-error: true
-
       - name: Upload analysis results to GitHub
         uses: github/codeql-action/upload-sarif@v3
         with:
