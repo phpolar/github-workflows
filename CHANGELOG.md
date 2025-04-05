@@ -1,3 +1,9 @@
+## 1.0.7 (2025-04-05)
+
+### Fix
+
+- add version to reusable workflow configuration
+
 ## 1.0.6 (2025-04-03)
 
 ### Fix
