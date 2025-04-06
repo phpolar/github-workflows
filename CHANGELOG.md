@@ -1,3 +1,9 @@
+## 1.0.9 (2025-04-05)
+
+### Fix
+
+- remove permission configurations
+
 ## 1.0.8 (2025-04-05)
 
 ### Fix
