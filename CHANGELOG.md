@@ -1,3 +1,9 @@
+## 1.0.8 (2025-04-05)
+
+### Fix
+
+- **auto-merge**: add on.workflow trigger
+
 ## 1.0.7 (2025-04-05)
 
 ### Fix
