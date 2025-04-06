@@ -1,7 +1,5 @@
 on:
   workflow_call:
-permissions:
-  contents: write
 jobs:
   prod_upgrade_release:
     env:
