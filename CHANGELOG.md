@@ -1,3 +1,9 @@
+## 1.1.0 (2025-04-11)
+
+### Feat
+
+- auto merge all phpolar and php-contrib deps
+
 ## 1.0.11 (2025-04-05)
 
 ### Fix
