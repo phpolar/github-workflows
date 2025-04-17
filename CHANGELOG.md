@@ -1,3 +1,15 @@
+## 1.1.2 (2025-04-16)
+
+### Fix
+
+- remove unnecessary changelog file
+
+## 1.1.1 (2025-04-15)
+
+### Fix
+
+- correct logic
+
 ## 1.1.0 (2025-04-11)
 
 ### Feat
