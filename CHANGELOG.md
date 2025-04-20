@@ -1,3 +1,9 @@
+## 1.2.1 (2025-04-20)
+
+### Fix
+
+- remove permission declarations
+
 ## 1.2.0 (2025-04-20)
 
 ### Feat
