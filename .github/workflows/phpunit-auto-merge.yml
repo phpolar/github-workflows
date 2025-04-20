@@ -5,5 +5,5 @@ jobs:
   dependabot_auto_merge_code_sniffer:
     uses: phpolar/github-workflows/.github/workflows/common-composer-dep-auto-merge.yml@v1
     with:
-      dependency-name: phpunit 
-      composer-run: "ci:test"
+      dependency-name: phpunit
+      composer-run: 'ci:test'
