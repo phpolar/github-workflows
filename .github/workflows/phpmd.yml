@@ -17,15 +17,10 @@ name: PHPMD
 
 on:
   workflow_call:
-permissions:
-  contents: read
 jobs:
   PHPMD:
     name: Run PHPMD scanning
     runs-on: ubuntu-latest
-    permissions:
-      contents: read # for checkout to fetch code
-      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
