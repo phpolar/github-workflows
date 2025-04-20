@@ -1,3 +1,13 @@
+## 1.2.0 (2025-04-20)
+
+### Feat
+
+- test more images
+
+### Fix
+
+- remove deprecated ubuntu image
+
 ## 1.1.2 (2025-04-16)
 
 ### Fix
