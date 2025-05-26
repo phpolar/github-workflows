@@ -1,0 +1,26 @@
+name: Deploy Documentation
+on:
+  workflow_call:
+jobs:
+  deploy_docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+      - name: Install dependencies
+        run: composer install --no-ansi --no-interaction --prefer-dist --no-progress --ignore-platform-req=ext-ast
+      - name: Generate documentation
+        run: composer docs:generate
+      - name: Setup user email
+        run: git config --global user.email "$USER_EMAIL"
+      - name: Setup user namei
+        run: git config --global user.name "$GITHUB_ACTOR"
+      - name: Convert to unshallow fetch
+        run: git fetch --all --unshallow
+      - name: Checkout branch
+        run: git checkout release-docs
+      - name: Commit documentation artifacts
+        run: "git commit -a --message docs: update documentation"
