@@ -23,4 +23,4 @@ jobs:
       - name: Checkout branch
         run: git checkout release-docs
       - name: Commit documentation artifacts
-        run: "git commit -a --message docs: update documentation"
+        run: "git commit -a --message 'docs: update documentation'"
