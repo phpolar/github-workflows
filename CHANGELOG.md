@@ -1,3 +1,9 @@
+## 1.3.2 (2025-05-26)
+
+### Fix
+
+- move doc generating command
+
 ## 1.3.1 (2025-05-26)
 
 ### Fix
