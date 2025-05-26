@@ -1,3 +1,9 @@
+## 1.3.0 (2025-05-26)
+
+### Feat
+
+- add deploy documentation workflow
+
 ## 1.2.1 (2025-04-20)
 
 ### Fix
