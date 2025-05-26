@@ -12,8 +12,6 @@ jobs:
           php-version: 8.3
       - name: Install dependencies
         run: composer install --no-ansi --no-interaction --prefer-dist --no-progress --ignore-platform-req=ext-ast
-      - name: Generate documentation
-        run: composer docs:generate
       - name: Setup user email
         run: git config --global user.email "$USER_EMAIL"
       - name: Setup user namei
@@ -22,5 +20,7 @@ jobs:
         run: git fetch --all --unshallow
       - name: Checkout branch
         run: git checkout release-docs
+      - name: Generate documentation
+        run: composer docs:generate
       - name: Commit documentation artifacts
         run: "git commit -a --message 'docs: update documentation'"
