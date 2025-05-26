@@ -16,6 +16,8 @@ jobs:
         run: git config --global user.email "$USER_EMAIL"
       - name: Setup user namei
         run: git config --global user.name "$GITHUB_ACTOR"
+      - name: fetch
+        run: git fetch origin
       - name: Checkout branch
         run: git checkout release-docs
       - name: Generate documentation
