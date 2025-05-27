@@ -1,3 +1,9 @@
+## 1.3.7 (2025-05-27)
+
+### Fix
+
+- remove non-existent variable
+
 ## 1.3.6 (2025-05-26)
 
 ### Fix
