@@ -26,3 +26,5 @@ jobs:
         run: composer ci:docs:generate
       - name: Commit documentation artifacts
         run: "git commit -a --message 'docs: update documentation'"
+      - name: Push documentation
+        run: git push
