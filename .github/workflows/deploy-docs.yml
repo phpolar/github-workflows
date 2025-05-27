@@ -23,6 +23,6 @@ jobs:
       - name: Merge main branch
         run: git merge $(git_main_branch)
       - name: Generate documentation
-        run: composer docs:generate
+        run: composer ci:docs:generate
       - name: Commit documentation artifacts
         run: "git commit -a --message 'docs: update documentation'"
