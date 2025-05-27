@@ -21,7 +21,7 @@ jobs:
       - name: Checkout branch
         run: git checkout release-docs
       - name: Merge main branch
-        run: git merge $(git_main_branch)
+        run: git merge main
       - name: Generate documentation
         run: composer ci:docs:generate
       - name: Commit documentation artifacts
