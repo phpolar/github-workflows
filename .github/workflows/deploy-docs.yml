@@ -17,7 +17,7 @@ jobs:
       - name: Setup user namei
         run: git config --global user.name "$GITHUB_ACTOR"
       - name: fetch
-        run: git fetch origin
+        run: git fetch --all --unshallow
       - name: Checkout branch
         run: git checkout release-docs
       - name: Merge main branch
