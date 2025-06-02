@@ -1,3 +1,9 @@
+## 1.4.0 (2025-06-01)
+
+### Feat
+
+- **pr-quality**: run unit tests in php 8.4
+
 ## 1.3.9 (2025-05-27)
 
 ### Fix
