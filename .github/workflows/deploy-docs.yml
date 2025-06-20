@@ -9,7 +9,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.3
+          php-version: 8.4
       - name: Install dependencies
         run: composer install --no-ansi --no-interaction --prefer-dist --no-progress --ignore-platform-req=ext-ast
       - name: Setup user email
