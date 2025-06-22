@@ -1,7 +1,8 @@
+name: Operating System Build Checks
 on:
   workflow_call:
 jobs:
-  build_php_old_stable:
+  os_build_check:
     runs-on: ${{ matrix.operating-system }}
     continue-on-error: true
     strategy:
