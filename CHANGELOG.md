@@ -1,3 +1,9 @@
+## 1.4.2 (2025-06-22)
+
+### Fix
+
+- add coverage, simplify os build check
+
 ## 1.4.1 (2025-06-19)
 
 ### Fix
