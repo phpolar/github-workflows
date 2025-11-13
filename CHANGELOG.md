@@ -1,3 +1,13 @@
+## 1.5.2 (2025-11-12)
+
+### Feat
+
+- use php 8.4 in auto-merge
+
+### Fix
+
+- update images
+
 ## 1.5.1 (2025-06-22)
 
 ### Fix
