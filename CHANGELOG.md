@@ -1,3 +1,9 @@
+## 1.5.3 (2025-11-12)
+
+### Fix
+
+- remove enterprise-tier images
+
 ## 1.5.2 (2025-11-12)
 
 ### Feat
