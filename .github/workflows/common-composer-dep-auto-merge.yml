@@ -19,7 +19,7 @@ jobs:
       (github.event.pull_request.user.login == 'dependabot[bot]' || github.actor == 'dependabot[bot]') &&
       contains(github.event.pull_request.title, ${{ inputs.dependency-name }})
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
