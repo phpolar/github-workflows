@@ -1,3 +1,9 @@
+## 1.6.0 (2026-01-11)
+
+### Feat
+
+- remove expensive macos runs
+
 ## 1.5.3 (2025-11-12)
 
 ### Fix
