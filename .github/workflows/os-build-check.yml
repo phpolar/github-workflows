@@ -13,8 +13,6 @@ jobs:
             'ubuntu-22.04',
             'windows-2025',
             'windows-2022',
-            'macos-15',
-            'macos-15-intel',
             'macos-14',
           ]
         php-versions: ['8.4']
