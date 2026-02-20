@@ -19,7 +19,7 @@ jobs:
       (github.event.pull_request.user.login == 'dependabot[bot]' || github.actor == 'dependabot[bot]') &&
       contains(github.event.pull_request.title, ${{ inputs.dependency-name }})
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -30,7 +30,7 @@ jobs:
       - name: Validate composer.json and composer.lock
         run: composer validate --strict
       - name: Cache Composer packages
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: vendor
           key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
@@ -43,7 +43,7 @@ jobs:
       - name: Dependabot metadata
         if: ${{ success() }}
         id: dependabot-metadata
-        uses: dependabot/fetch-metadata@v2.4.0
+        uses: dependabot/fetch-metadata@v2.5.0
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Enable auto-merge for Dependabot PRs
