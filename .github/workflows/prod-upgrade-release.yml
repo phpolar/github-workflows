@@ -10,7 +10,7 @@ jobs:
       USER_EMAIL: no-reply@phpolar.org
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Setup user email
         run: git config --global user.email "$USER_EMAIL"
       - name: Setup user namei
